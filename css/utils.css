@@ -1,0 +1,21 @@
+.my-s{
+    margin-top: 10px;
+}
+
+.my-m{
+    margin-top: 20px;
+}
+.my-l{
+     margin-top: 40px;
+}
+
+h1{
+    font-weight: 800;
+    text-align: center;
+    color: rgb(53, 53, 53);
+    /* font-weight: 700; */
+}
+h2{
+    color: rgb(53, 53, 53);
+    /* font-weight: 700; */
+}
