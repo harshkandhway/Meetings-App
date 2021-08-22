@@ -6,29 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant">
+    <link rel="stylesheet" href="/css/login-page.css">
+    <link rel="stylesheet" href="/css/utils.css">
+    <link rel="stylesheet" href="/external/normalize.css">
     <style>
         .sign-in-form {
             display: block;
         }
-
-        .sign_up_overlay {
-            position: absolute;
-            background-color: teal;
-            width: 384px;
-            min-height: 480px;
-            right: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-    <link rel="stylesheet" href="/css/login-page.css">
-    <link rel="stylesheet" href="/css/utils.css">
+        
+    </style>  
 </head>
-
 <body>
-    <h2>Weclome to Meetings App</h2>
+    <h1 class="welcome">Weclome to Meetings App</h1>
     <div class="my-m container">
         <div class="sign-in-container">
             <h1>Sign in</h1>
@@ -37,26 +27,28 @@
                     <input type="email" name="femail" id="femail" placeholder="Email" class="fdetail">
                     <input type="password" name="fpassword" id="fpassword" placeholder="Password" class="fdetail">
                     <a href="#" class="forget-pass my-s">Forgot your password</a>
-                    <input type="submit" value="SIGN IN" class="fbutton my-m">
+                    <a href="calendar.html"><input type="button" value="SIGN IN" class="fbutton my-m"></a>
                 </form>
             </div>
         </div>
 
-        <div class="sign-up-container">
+        <div class="suc sign-up-container">
             <h1>Sign Up</h1>
             <div class="sign-up-form">
                 <form action="#">
                     <input type="text" name="fname" placeholder="Name" class="fdetail">
                     <input type="email" name="femail" class="fdetail" placeholder="Email">
                     <input type="password" name="fpassword" class="fdetail" placeholder="Password">
+                    <input type="password" name="fconfirm" class="fdetail" placeholder="Confirm Password">
                     <a href="#" class="forget-pass my-m">Forgot your password</a>
-                    <input type="submit" value="SIGN UP" class="fbutton my-m">
+                    <input type="button" value="SIGN UP" class="fbutton my-m">
                 </form>
             </div>
         </div>
-        <div class="sign_up_overlay">
-            <a href="signup.html"><form action="#">
-                <input type="button" value="SIGN UP" class="fbutton overlay-button">
+        <div class="sign_in overlay">
+            <a href="signup.html">
+                <form action="#">
+                    <input type="button" value="SIGN UP" class="fbutton overlay-button">
             </a>
             </form>
         </div>
