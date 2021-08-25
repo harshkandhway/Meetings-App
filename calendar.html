@@ -12,27 +12,34 @@
     <link rel="stylesheet" href="/css/calendar-style.css">
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/external/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
 </head>
 
 <body>
     <nav>
         <div class="mob-nav">
             <div class="nav-button">
-                <span>My Meetings</span>
-                <input type="button" value="">
+                <span><b>My Meetings</b></span>
+                <i class="fas fa-bars fa-2x"></i>
             </div>
-            <div class="navigation">
+            <div class="navigation visibility">
                 <div class="nav-menus menu-pages">
                     <ul>
                         <a href="calendar.html">
                             <li>Calendar</li>
                         </a>
+                        <hr class="border-responsive">
                         <a href="meetings.html">
                             <li>Meetings</li>
                         </a>
+                        <hr class="border-responsive">
                         <a href="teams.html">
                             <li>Teams</li>
                         </a>
+                        <hr class="border-responsive">
                     </ul>
                 </div>
                 <div class="nav-menus menu-options">
@@ -40,6 +47,7 @@
                         <a href="#">
                             <li>Hello, grdharsh19@gmail.com</li>
                         </a>
+                        <hr class="border-responsive">
                         <a href="#">
                             <li>Logout</li>
                         </a>
@@ -48,6 +56,55 @@
             </div>
         </div>
     </nav>
+    <div class="container">
+        <h1>Calendar</h2>
+            <hr />
+            <div class="container-date">
+                <div>
+                    <h2>12 September 2020</h2>
+                    <h3>Saturday</h3>
+                </div>
+                <input type="date" name="fdate" id="fdate">
+            </div>
+            <div class="calendar">
+                <div>
+                    <div class="calendar-hours"><p>0</p></div>
+                    <div class="calendar-hours"><p>1</p></div>
+                    <div class="calendar-hours"><p>2</p></div>
+                    <div class="calendar-hours"><p>3</p></div>
+                    <div class="calendar-hours"><p>4</p></div>
+                    <div class="calendar-hours"><p>5</p></div>
+                    <div class="calendar-hours"><p>6</p></div>
+                    <div class="calendar-hours"><p>7</p></div>
+
+                    <div class="calendar-hours"><p>8</p></div>
+                    <div class="calendar-hours"><p>9</p></div>
+                    <div class="calendar-hours"><p>10</p></div>
+                    <div class="calendar-hours"><p>11</p></div>
+
+                    <div class="calendar-hours"><p>12</p></div>
+                    <div class="calendar-hours"><p>13</p></div>
+                    <div class="calendar-hours"><p>14</p></div>
+                    <div class="calendar-hours"><p>15</p></div>
+
+                    <div class="calendar-hours"><p>16</p></div>
+                    <div class="calendar-hours"><p>17</p></div>
+                    <div class="calendar-hours"><p>18</p></div>
+                    <div class="calendar-hours"><p>19</p></div>
+
+                    <div class="calendar-hours"><p>20</p></div>
+                    <div class="calendar-hours"><p>21</p></div>
+                    <div class="calendar-hours"><p>22</p></div>
+                    <div class="calendar-hours"><p>23</p></div>
+                </div>
+                <div class="meetings-container">
+                    <p>Project Kickoff</p>
+                    <hr/>
+                    <p>Attendees : mark@example.com, jane@example.com</p>
+                </div>
+            </div>
+            
+    </div>
 </body>
 
 </html>

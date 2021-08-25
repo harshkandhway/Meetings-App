@@ -1,21 +1,29 @@
+body{
+    font-family: 'Cormorant', serif;
+}
+
 .mob-nav{
     display: flex;
-    background-color: darkgray;
+    background-color: teal;
     width: 100%;
     height: 44px;
     flex-direction: column;
     align-content: center;
+    color: white;
+    z-index: 1;
 }
-.navigation{
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+.border-responsive{
+    width: 100%;
 }
+/* .navigation{
+    
+    display: none;
+} */
 .nav-button{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 0;  
+    padding: 0;  
     align-content: center;
     align-items: center;
     line-height: 44px;
@@ -25,15 +33,24 @@
     margin-left: 1em;
 }
 
-.nav-button input{
-    height: 43px;
-    width: 45px;
-    margin-right: 1em;
+.nav-button i{
+    margin-right: 0.5em;
     padding:0;
 }
 
+.nav-button i:hover .navigation{
+    display: flex;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .visibility:hover{
+    display: none;
+} */
+
 .nav-menus{
-    background-color: darkgray;
+    background-color: teal;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -44,27 +61,32 @@
     flex-direction: column;
     list-style-type: none;
     margin: 0;
-    padding-left: 2em;
+    padding: 0;
+    width: 99%;
+    font-size: medium;
 }
 
 .menu-pages{
     color: rgb(29, 29, 29);
+    padding-left: 0;
 }
 
 .menu-options{
     color: rgb(51, 51, 51); 
     margin: 0;
+    padding-right: 0;
 }
 
 .nav-menus li{
-    padding: 15px 0;
+    padding: 15px 1.5em;
     list-style-type: none;
+    color: white;
 }
 
 @media(min-width:768px){
     .navigation{
         display: flex;    
-        background-color: darkgray;
+        background-color: teal;
         width: 100%;
         height: 44px;
         justify-content: space-between;
@@ -73,7 +95,7 @@
     }
     
     .nav-menus{
-        background-color: darkgray;
+        background-color: teal;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -84,16 +106,19 @@
         display: flex;
         flex-direction: row;
         margin: auto;
+        width: fit-content;
     }
     
     .menu-pages{
         color: rgb(29, 29, 29);
         margin: 0 1em;
+        padding-left: 50px;
     }
     
     .menu-options{
         color: rgb(51, 51, 51); 
         margin: 0 1em;
+        padding-right: 50px;
     }
     
     .nav-menus li{
@@ -104,6 +129,10 @@
     .nav-button{
         display:none;
         padding: 0px;
+        
+    }
+    .border-responsive{
+        display: none;
     }
     
 }
