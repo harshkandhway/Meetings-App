@@ -80,6 +80,28 @@
     margin-top: 10px;
     border-radius: 5px;
     flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.matching{
+    display: inline-flex;
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.matching-container{
+    margin: 20px;
+}
+
+.search-filter{
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .search-container{
