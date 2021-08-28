@@ -8,7 +8,6 @@
 .my-l{
      margin-top: 40px;
 }
-
 h1{
     font-weight: 800;
     text-align: center;
@@ -19,3 +18,9 @@ h2{
     color: rgb(53, 53, 53);
     /* font-weight: 700; */
 }
+
+.container{
+    margin: 0 85px;
+    z-index: 0;
+}
+

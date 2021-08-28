@@ -15,17 +15,20 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
+        
 </head>
 
 <body>
     <nav>
         <div class="mob-nav">
             <div class="nav-button">
-                <span><b>My Meetings</b></span>
+                <div><b>My Meetings</b></div>
+                <label for="nav-toggle">
                 <i class="fas fa-bars fa-2x"></i>
+                </label>
             </div>
-            <div class="navigation visibility">
+            <input type="checkbox" name="nav-toggle" id="nav-toggle" class="visibility">
+            <div class="navigation">
                 <div class="nav-menus menu-pages">
                     <ul>
                         <a href="calendar.html">
@@ -72,6 +75,7 @@
                     <div class="calendar-hours"><p>1</p></div>
                     <div class="calendar-hours"><p>2</p></div>
                     <div class="calendar-hours"><p>3</p></div>
+
                     <div class="calendar-hours"><p>4</p></div>
                     <div class="calendar-hours"><p>5</p></div>
                     <div class="calendar-hours"><p>6</p></div>
@@ -102,6 +106,7 @@
                     <hr/>
                     <p>Attendees : mark@example.com, jane@example.com</p>
                 </div>
+
             </div>
             
     </div>

@@ -68,8 +68,8 @@ form {
 
 .fbutton {
     border-radius: 20px;
-    border: 1px solid #2fe9ca;
-    background-color: #2fe9ca;
+    border: 1px solid #5f2c82;
+    background-color: #5f2c82;
     font-size: 12px;
     font-weight: bold;
     padding: 12px 30px;
@@ -79,11 +79,11 @@ form {
 }
 
 .fbutton:hover {
-    background-color: #1dfad5;
+    background-color: #472061;
 }
 
 .fbutton:active {
-    background-color: #00ffd5;
+    background-color: #7e3baa;
 }
 
 .forget-pass {

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetings</title>
+</head>
+
+<link rel="stylesheet" href="/css/meetings.css">
+<link rel="stylesheet" href="/css/nav.css">
+<link rel="stylesheet" href="/external/normalize.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+<body>
+    <nav>
+        <div class="mob-nav">
+            <div class="nav-button">
+                <div><b>My Meetings</b></div>
+                <label for="nav-toggle">
+                    <i class="fas fa-bars fa-2x"></i>
+                </label>
+            </div>
+            <input type="checkbox" name="nav-toggle" id="nav-toggle" class="visibility">
+            <div class="navigation">
+                <div class="nav-menus menu-pages">
+                    <ul>
+                        <a href="calendar.html">
+                            <li>Calendar</li>
+                        </a>
+                        <hr class="border-responsive">
+                        <a href="meetings.html">
+                            <li>Meetings</li>
+                        </a>
+                        <hr class="border-responsive">
+                        <a href="teams.html">
+                            <li>Teams</li>
+                        </a>
+                        <hr class="border-responsive">
+                    </ul>
+                </div>
+                <div class="nav-menus menu-options">
+                    <ul>
+                        <a href="#">
+                            <li>Hello, grdharsh19@gmail.com</li>
+                        </a>
+                        <hr class="border-responsive">
+                        <a href="#">
+                            <li>Logout</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Meetings</h2>
+            <hr />
+            <div class="container-meeting">
+                <div class="options"></div>
+                <div class="search-and-add">
+                    <label for="outer-design1">
+                        <div id="search-meeting-container">
+
+                            <input type="radio" name="outer" id="outer-design1" class="outer-design1 dis" checked>
+                            <div class="search">
+                                <span>Filter/Search meetings</span>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="outer-design2">
+                        <div id="add-meeting-container">
+
+                            <input type="radio" name="outer" id="outer-design2" class="outer-design2 dis">
+                            <div class="add-meeting">
+                                <span>Add a meeting</span>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="search-for-meeting" id="search-for-meeting">
+                <div class="search-container">
+                    <h2>Search for meetings</h2>
+                    <hr />
+                    <label for="date-selector">
+                        <p>Date</p>
+                    </label>
+                    <select name="date-selector" id="date-selector1" class="date-selector">
+                        <option value="All">All</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <label for="search-for">
+                        <p>Search for</p>
+                    </label>
+                    <textarea name="search-for" id="search-for"
+                        placeholder="Search using words which describe the meeting"></textarea>
+                    <input type="button" value="Search" class="fbutton my-m">
+                </div>
+            </div>
+
+            <div class="add-new search-for-meeting" id="add-new" style="display: none;">
+                <div class="add-new-container search-container">
+                    <h2>Add a new meeting</h2>
+                    <hr />
+                    <label for="date-selector">
+                        <p>Date</p>
+                    </label>
+                    <input type="date" name="dateSelector" id="date-selector2" class="date-selector">
+                    
+                    <p>Start time (hh:mm)</p>
+                    <select name="start-time" id="start-time1" style="height: 35px; width: 50px; font-weight: 800; font-size: large; border-radius: 5px;">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    <span>:</span>
+                    <select name="start-time" id="start-time2" style="height: 35px; width: 50px; font-weight: 800; font-size: large; border-radius: 5px;">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+
+                    <p>End Time (hh:mm)</p>
+                    <select name="start-time" id="start-time1" style="height: 35px; width: 50px; font-weight: 800; font-size: large; border-radius: 5px;">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    <span>:</span>
+                    <select name="start-time" id="start-time2" style="height: 35px; width: 50px; font-weight: 800; font-size: large; border-radius: 5px;">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+
+                    <label for="search-for">
+                        <p>Description</p>
+                    </label>
+                    <textarea name="search-for" id="search-for" placeholder="Search using words which describe the meeting">
+                    </textarea>
+                    <label for="emails">
+                        <p>EmailIDs of attendees, or team's short</p>
+                    </label>
+                    <input type="text" name="emails" id="emails" class="emails" style="height: 20px; width: 100%; border-radius: 5px;" placeholder="john@example.com, @annual-day, mark@example.com">
+                    <input type="button" value="Search" class="fbutton my-m">
+                </div>
+            </div>
+
+    </div>
+</body>
+<script src="/script/script.js">
+
+</script>
+</html>
