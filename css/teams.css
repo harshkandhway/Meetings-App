@@ -1,0 +1,91 @@
+/* *{
+    box-sizing: border-box;
+} */
+
+body{
+    height: 100%;
+}
+
+.container{
+    position: relative;
+    z-index: 0;
+}
+
+.teams{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    z-index: 0;
+    flex-direction: row;
+    
+}
+
+.add-team-container{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    margin: auto;
+}
+
+.add-new-team{
+    top: 0;
+    left: 0;
+    right: 0;
+    display: inline-flex;
+    background-color: darkslategrey;
+    height: fit-content;
+    flex-direction: column;
+    margin: auto;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+}
+
+.add-team-overlay:checked + .add-team-container{
+    display: block;
+}
+
+.team-container{
+
+    /* flex-wrap: wrap; */
+    display: inline-flex;
+    /* height: fit-content; */
+    /* margin-top: 10px; */
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    flex-direction: column;
+    /* margin-bottom: 10px; */
+    flex-basis: 32%;
+    margin: 5px;
+    min-width: 300px;
+    max-width: 350px;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+}
+
+.select-member button{
+    border: 1px solid teal;
+    border-radius: 5px;
+    background-color: teal; 
+    color: white;
+    height: 32 px;
+    margin: auto;
+    padding: auto;
+}
+
+@media(max-width:900px){
+    .teams{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        /* flex-direction: column; */
+        width: 100%;
+        flex-wrap: wrap;
+        z-index: 0;
+        
+    }
+    
+
+}

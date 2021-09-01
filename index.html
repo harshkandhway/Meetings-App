@@ -19,7 +19,7 @@
     </style>  
 </head>
 <body>
-    <h1 class="welcome">Weclome to Meetings App</h1>
+    <h1 class="welcome">Welcome to Meetings App</h1>
     <div class="my-m container">
         <div class="sign-in-container">
             <h1>Sign in</h1>
@@ -27,7 +27,7 @@
                 <form action="#">
                     <input type="email" name="femail" id="femail" placeholder="Email" class="fdetail">
                     <input type="password" name="fpassword" id="fpassword" placeholder="Password" class="fdetail">
-                    <a href="#" class="forget-pass my-s">Forgot your password</a>
+                    <a href="#" class="forget-pass my-s">Forgot your password ?</a>
                     <a href="calendar.html"><input type="button" value="SIGN IN" class="fbutton my-m"></a>
                 </form>
             </div>
@@ -49,12 +49,31 @@
         <div class="sign_in overlay">
             <a href="signup.html">
                 <form action="#">
-                    <input type="button" value="SIGN UP" class="fbutton overlay-button">
+                    <input type="button" value="SIGN UP" class="fbutton overlay-button signup-overlay-button">
             </a>
             </form>
         </div>
+        <!-- <div class="sign_up overlay" style="display: none;">
+            <a href="index.html">
+                <form action="#">
+                    <input type="button" value="SIGN IN" class="fbutton overlay-button">
+            </a>
+            </form>
+        </div> -->
     </div>
 
 </body>
+
+<!-- <script>
+    let signupButton = document.querySelector(".signup-overlay-button");
+    let signupOverlay = document.querySelector(".sign_in")
+    let signinOverlay = document.querySelector(".sign_up")
+
+signupButton.addEventListener("click",function(){
+    signupOverlay.style.display = "none";
+    signinOverlay.style.display = "block";
+})
+
+</script> -->
 
 </html>

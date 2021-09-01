@@ -2,7 +2,13 @@ body{
     font-family: 'Cormorant', serif;
 }
 
+.container{
+    margin: 0 20px;
+    z-index: 1;
+}
+
 .mob-nav{
+    position: relative;
     display: flex;
     background-color: teal;
     width: 100%;
@@ -80,6 +86,11 @@ body{
 }
 
 @media(min-width:768px){
+    .container{
+        margin: 0 120px;
+        z-index: 1;
+    }
+
     .navigation{
         display: flex;
         justify-content: space-between;

@@ -9,12 +9,9 @@ search.addEventListener("click", function(){
     searchContainer.style.display = "inline-flex";
 });
 
-
-
-
-
-
 add.addEventListener("click", function(){
     searchContainer.style.display = "none";
     addContainer.style.display = "inline-flex";
 })
+
+
