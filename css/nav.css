@@ -106,11 +106,16 @@ button{
     color: white;
 }
 
-
+/* @media(min-width:1000px){
+    .container{
+        margin: 0 50px;
+        z-index: 1;
+    }
+} */
 
 @media(min-width:768px){
     .container{
-        margin: 0 120px;
+        margin: 0 90px;
         z-index: 1;
     }
 

@@ -19,6 +19,10 @@ body {
 button{
     outline: none;
 }
+
+input{
+    outline: none;
+}
 .container {
     background-color: #fff;
     border-radius: 10px;
