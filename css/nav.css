@@ -18,6 +18,10 @@ body{
     color: white;
     z-index: 1;
 }
+
+.mob-nav a{
+    text-decoration: none;
+}
 .border-responsive{
     width: 100%;
 }
