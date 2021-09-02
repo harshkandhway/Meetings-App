@@ -13,7 +13,7 @@ body{
 
 .teams{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     flex-wrap: wrap;
     z-index: 0;
@@ -25,11 +25,12 @@ body{
     display: none;
     position: absolute;
     width: 100%;
-    top: 0;
+    top: 80px;
     margin: auto;
 }
 
 .add-new-team{
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -57,25 +58,40 @@ body{
     flex-direction: column;
     /* margin-bottom: 10px; */
     flex-basis: 32%;
-    margin: 5px;
-    min-width: 300px;
-    max-width: 350px;
+    margin: 20px;
+    min-width: 330px;
+    max-width: 330px;
     justify-content: center;
     align-items: center;
     min-height: 350px;
 }
 
-.select-member button{
-    border: 1px solid teal;
-    border-radius: 5px;
-    background-color: teal; 
+
+
+.cross-button{
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    margin: 10px 10px 0 0; 
     color: white;
-    height: 32 px;
-    margin: auto;
-    padding: auto;
 }
 
-@media(max-width:900px){
+.cross-button:hover{
+    color: teal;
+}
+
+.cross-button:active{
+    color: rgb(0, 241, 241);
+}
+
+.fas{
+   color: rgb(49, 49, 49);
+}
+.fas:hover{
+    color: rgb(102, 102, 102);
+}
+
+@media(max-width:1000px){
     .teams{
         position: relative;
         display: flex;
@@ -84,8 +100,5 @@ body{
         width: 100%;
         flex-wrap: wrap;
         z-index: 0;
-        
     }
-    
-
 }

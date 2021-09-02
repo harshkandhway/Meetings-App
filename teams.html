@@ -11,7 +11,6 @@
 <link rel="stylesheet" href="css/nav.css">
 <link rel="stylesheet" href="css/meetings.css">
 <link rel="stylesheet" href="css/teams.css">
-
 <link rel="stylesheet" href="external/normalize.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -30,29 +29,42 @@
             <div class="navigation">
                 <div class="nav-menus menu-pages">
                     <ul>
-                        <a href="calendar.html">
-                            <li>Calendar</li>
-                        </a>
+                        <div
+                            style="height: 43px; display: inline-flex; flex-direction: column; justify-content: center;">
+                            <a href="calendar.html">
+                                <li>Calendar</li>
+                            </a>
+                        </div>
                         <hr class="border-responsive">
-                        <a href="meetings.html">
-                            <li>Meetings</li>
-                        </a>
+                        <div
+                            style="height: 43px; display: inline-flex; flex-direction: column; justify-content: center;">
+                            <a href="meetings.html">
+                                <li>Meetings</li>
+                            </a>
+                        </div>
                         <hr class="border-responsive">
-                        <a href="teams.html">
-                            <li>Teams</li>
-                        </a>
+                        <div
+                            style="height: 43px; display: inline-flex; flex-direction: column; justify-content: center;">
+                            <a href="teams.html">
+                                <li>Teams</li>
+                            </a>
+                        </div>
                         <hr class="border-responsive">
                     </ul>
                 </div>
                 <div class="nav-menus menu-options">
                     <ul>
-                        <a href="#">
+                        <div
+                            style="height: 43px; display: inline-flex; flex-direction: column; justify-content: center;">
                             <li>Hello, grdharsh19@gmail.com</li>
-                        </a>
+                        </div>
                         <hr class="border-responsive">
-                        <a href="index.html">
-                            <li>Logout</li>
-                        </a>
+                        <div
+                            style="height: 43px; display: inline-flex; flex-direction: column; justify-content: center;">
+                            <a href="index.html">
+                                <li>Logout</li>
+                            </a>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -73,8 +85,9 @@
                     <hr />
                     <p><b>Members</b>: johnk@example.com jane@example.com</p>
                     <div class="select-member" style="height: 30px; margin: 0; padding: 5px;">
-                        <input type="number" name="member" id="member" placeholder="Select member" style="height: inherit; border-radius: 5px; border: 1px solid lightgray;">
-                        <button>Add</button>
+                        <input type="number" name="member" id="member" placeholder="Select member"
+                            style="height: inherit; border-radius: 5px; border: 1px solid lightgray;">
+                        <button style="height: inherit; border-radius: 5px; border: 1px solid lightgray;">Add</button>
                     </div>
                 </div>
             </div>
@@ -89,22 +102,23 @@
                     <hr />
                     <p><b>Members</b>: jane@example.com mark@example.com</p>
                     <div class="select-member" style="height: 30px; margin: 0; padding: 5px;">
-                        <input type="number" name="member" id="member" placeholder="Select member" style="height: inherit; border-radius: 5px; border: 1px solid lightgray;">
-                        <button>Add</button>
+                        <input type="number" name="member" id="member" placeholder="Select member"
+                            style="height: inherit; border-radius: 5px; border: 1px solid lightgray;">
+                        <button style="height: inherit; border-radius: 5px; border: 1px solid lightgray;">Add</button>
                     </div>
                 </div>
             </div>
-
-            <div class="team-container">
-                <label for="add-team-overlay">
-                <div class="matching-container">
-                    <i class="fas fa-plus fa-2x"></i>
+            <label for="add-team-overlay">
+                <div class="team-container">
+                    <div class="matching-container">
+                        <i class="fas fa-plus fa-2x"></i>
+                    </div>
                 </div>
             </label>
-            </div>
         </div>
 
-        <input type="checkbox" name="add-team-overlay" id="add-team-overlay" class="add-team-overlay" style="display: none;">
+        <input type="checkbox" name="add-team-overlay" id="add-team-overlay" class="add-team-overlay"
+            style="display: none;">
         <div class="add-team-container" display: none;>
             <div class="add-new-team" id="add-new" style="position: absolute; top: 0; max-width: 500px;">
                 <div class="add-new-container search-container">
@@ -113,29 +127,36 @@
                     <label for="name-selector">
                         <p>Name of Team</p>
                     </label>
-                    <input type="text" name="name-selector" id="name-selector" class="date-selector" style="border: 1px solid white;">
+                    <input type="text" name="name-selector" id="name-selector" class="date-selector"
+                        style="border: 1px solid white;">
                     <label for="id-selector">
                         <p>Team id</p>
                     </label>
-                    <input type="text" name="id-selector" id="id-selector" class="date-selector" style="border: 1px solid white;">
+                    <input type="text" name="id-selector" id="id-selector" class="date-selector"
+                        style="border: 1px solid white;">
 
                     <label for="search-for">
                         <p>Description</p>
                     </label>
-                    <textarea name="search-for" id="search-for" placeholder="Search using words which describe the meeting">
-                    </textarea>
+                    <textarea name="search-for" id="search-for"
+                        placeholder="Search using words which describe the meeting"></textarea>
 
-                    <label for="member">
+                    <label for="emails">
                         <p>Members</p>
                     </label>
                     <input type="text" name="emails" id="emails" class="date-selector"
                         style="width: 100%; border-radius: 5px; border: 1px solid white;"
                         placeholder="john@example.com, @annual-day, mark@example.com">
-                    <input type="button" value="Search" class="fbutton my-m">
+                    <input type="button" value="Add" class="fbutton my-m">
                 </div>
+                <label for="add-team-overlay">
+                    <div class="cross-button">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+                </label>
             </div>
         </div>
-        
+
     </div>
 
 </body>
