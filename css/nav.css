@@ -5,7 +5,9 @@ body{
 input{
     outline:none;
 }
-
+button{
+    outline: none;
+}
 .select-member button{
     border: 1px solid teal;
     border-radius: 5px;
