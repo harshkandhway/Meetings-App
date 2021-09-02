@@ -15,6 +15,10 @@ body {
 .welcome{
     color: white;
 }
+
+button{
+    outline: none;
+}
 .container {
     background-color: #fff;
     border-radius: 10px;
