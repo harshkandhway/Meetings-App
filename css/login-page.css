@@ -29,6 +29,13 @@ body {
     justify-content: space-evenly;
     align-items: flex-start;
 }
+
+.container a{
+    text-decoration: none;
+}
+
+
+
 .overlay {
     position: absolute;
     background-color: teal;
