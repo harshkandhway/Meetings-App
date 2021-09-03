@@ -1,12 +1,12 @@
 .my-s{
-    margin-top: 10px;
+    margin: 10px 0 10px 0;
 }
 
 .my-m{
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
 }
 .my-l{
-     margin-top: 40px;
+     margin: 40px 0 40px 0;
 }
 h1{
     font-weight: 800;
