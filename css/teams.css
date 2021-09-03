@@ -103,3 +103,63 @@ body{
         z-index: 0;
     }
 }
+
+@media(max-width:767px){
+    .teams{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        /* flex-direction: column; */
+        width: 100%;
+        flex-wrap: wrap;
+        z-index: 0;
+    }
+
+    .add-team-container{
+        display: none;
+        position: fixed;
+        width: 90%;
+        top: 80px;
+        margin: auto;
+    }
+}
+
+@media(max-width: 450px){
+    .teams{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        /* flex-direction: column; */
+        width: 100%;
+        flex-wrap: wrap;
+        z-index: 0;
+    }
+
+    .add-team-container{
+        display: none;
+        position: fixed;
+        width: 85%;
+        top: 80px;
+        margin: auto;
+    }
+}
+
+@media(max-width: 320px){
+    .teams{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        /* flex-direction: column; */
+        width: 100%;
+        flex-wrap: wrap;
+        z-index: 0;
+    }
+
+    .add-team-container{
+        display: none;
+        position: fixed;
+        width: 75%;
+        top: 80px;
+        margin: auto;
+    }
+}

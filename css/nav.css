@@ -19,7 +19,7 @@ button{
 }
 
 .container{
-    margin: 0 20px;
+    margin: 0 30px;
     z-index: 1;
 }
 
@@ -115,7 +115,7 @@ button{
 
 @media(min-width:768px){
     .container{
-        margin: 0 90px;
+        margin: 0 110px;
         z-index: 1;
     }
 
